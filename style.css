@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #5f503f;
+}
+
+.contaner {
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-top: 100px;
+}
+
+.contaner .card {
+  max-width: 300px;
+  height: 200px;
+  background: #353333;
+  background: #16384c;
+  margin: 30px 15px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.contaner .card:hover {
+  height: 420px;
+}
+
+.contaner .card .phto {
+  position: relative;
+  width: 260px;
+
+  top: -60px;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 3s;
+}
+
+.contaner .card .phto img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.contaner .card .contant {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #beb7b7;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.contaner .card:hover .contant {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+button {
+  margin-top: 40px;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  border-radius: 50%;
+  font-weight: 800;
+  transition: 0.3s;
+}
+
+button:hover {
+  box-shadow: 0 0px 80px #fffb01, 0 0px 50px #fffb01, 0 0px 20px #fffb01;
+
+  background: #fffb01;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  border-radius: 50%;
+  font-weight: 800;
+}
